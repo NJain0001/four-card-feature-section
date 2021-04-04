@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*, *::before, *::after {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --red-color: hsl(0, 78%, 62%);
+    --cyan-color: hsl(180, 62%, 55%);
+    --orange-color: hsl(34, 97%, 64%);
+    --blue-color: hsl(212, 86%, 64%);
+    --dark-blue-color: hsl(234, 12%, 34%);
+    --gray-blue-color: hsl(229, 6%, 66%);
+    --light-gray-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+}
+
+body {
+    padding: 4rem 2rem;
+}
+
+.headline {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    color: var(--dark-blue-color);
+}
+.bold {
+    font-weight: 600;
+}
+
+.sub-headline {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tool-card {
+    border-radius: 5px;
+    padding: 2rem;
+    min-height: 22vh;
+    position: relative;
+    box-shadow: .5px 4px 10px .5px var(--gray-blue-color);
+    border-top: .31rem solid;
+    margin-bottom: 2rem;
+}
+
+.cards.tool-card:last-child {
+    margin-bottom: 0;
+}
+
+.card-border-top-cyan {
+    border-top-color: var(--cyan-color);
+}
+
+.card-border-top-red {
+    border-top-color: var(--red-color);
+}
+
+.card-border-top-orange {
+    border-top-color: var(--orange-color);
+}
+
+.card-border-top-blue {
+    border-top-color: var(--blue-color);
+}
+
+.card-header {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--dark-blue-color);
+    margin-bottom: .2rem;
+}
+
+.card-description {
+    font-size: .9rem;
+    color: var(--dark-blue-color);
+    font-weight: 200;
+}
+
+.card-logo {
+    position: absolute;
+    bottom: 13%;
+    right: 10%;
+}
+
+@media screen and (min-width: 1440px) {
+    
+    body {
+        padding: 1rem 11.5rem;
+    }
+
+    .sub-headline {
+        padding: 0 21rem;
+    }
+    .cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .tool-card {
+        max-width: 20rem;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
